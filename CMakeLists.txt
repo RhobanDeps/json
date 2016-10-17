@@ -2,9 +2,16 @@ cmake_minimum_required(VERSION 2.8)
 
 project(json CXX)
 
-add_executable(json_unit
-    src/json.hpp test/catch.hpp test/unit.cpp
+find_package(catkin REQUIRED)
+
+catkin_package(
+  INCLUDE_DIRS src
 )
+
+# Do not compile due to unterminated raw string
+#add_executable(json_unit
+#    src/json.hpp test/catch.hpp test/unit.cpp
+#)
 
 if(MSVC)
     set(CMAKE_CXX_FLAGS

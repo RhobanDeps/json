@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package>
+  <name>json</name>
+  <version>0.0.0</version>
+  <description>A fixed version of json with catkin capabilities</description>
+
+  <maintainer email="qrouxel@labri.fr">Quentin Rouxel</maintainer>
+  <author email="missing@missing.com">Niels Lohmann</author>
+
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <export>
+  </export>
+</package>
